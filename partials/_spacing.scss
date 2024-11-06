@@ -1,0 +1,21 @@
+$map-sizes: (
+  sm: 0.5em,
+  normal: 1em,
+  lg: 2em,
+  xl: 5em,
+  xxl: 8em,
+);
+
+@each $breakpoint, $value in $map-sizes {
+    .margin-#{$breakpoint} {
+      margin: $value;
+    }
+
+  }
+
+@each $breakpoint, $value in $map-sizes {
+    .padding-#{$breakpoint} {
+      padding: $value;
+    }
+  }
+

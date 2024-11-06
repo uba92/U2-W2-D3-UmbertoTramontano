@@ -1,0 +1,28 @@
+$primaryBg: #212121;
+$secondaryBg: #303030;
+$primarytext: #f4f4f4;
+
+header {
+    nav {
+        background-color: $primaryBg;
+        ul {
+            li {
+                a {
+                    color: $primarytext;
+                }
+            }
+        }
+    }
+}
+
+
+.hero {
+    background-color: $secondaryBg;
+    color: $primarytext;
+}
+
+.buttons {
+    button {
+        color: $primarytext;
+    }
+}

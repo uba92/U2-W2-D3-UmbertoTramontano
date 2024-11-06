@@ -1,0 +1,33 @@
+$fsTitle: 4em;
+$fsAnchor: 2em;
+$fsButton:1.5em;
+
+.navbar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ul {
+        li {
+            a {
+                font-size: $fsAnchor;
+            }
+        }
+    }
+}
+
+@mixin title-big {
+    font-size: $fsTitle;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    h1 {
+        @include title-big()
+    }
+}
+
+.hero {
+    .buttons{
+        font-size: $fsButton;
+    }
+}
+

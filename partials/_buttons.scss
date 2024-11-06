@@ -1,0 +1,7 @@
+$btn-colors: blue, orange, green;
+
+@each $color in $btn-colors {
+    .btn-color-#{$color} {
+        background-color: $color;
+    }
+}

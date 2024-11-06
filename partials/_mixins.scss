@@ -1,0 +1,30 @@
+
+@mixin title-big {
+    font-size: 3em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    h1 {
+        @include title-big()
+    }
+}
+
+@mixin floating {
+    border-radius: 15%;
+    box-shadow: 5px 5px 15px 5px #FFFFFF;
+    border: 2px solid lightseagreen;
+}
+
+.navbar{
+    img {
+        @include floating();
+    }
+}
+
+.hero {
+    img {
+        @include floating();
+    }
+}
